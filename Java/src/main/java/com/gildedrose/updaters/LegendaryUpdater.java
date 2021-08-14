@@ -4,21 +4,15 @@ import com.gildedrose.Item;
 
 public class LegendaryUpdater extends ItemUpdater {
 
-    int qualityChangeRate = 0;
+    public static final int LEGENDARY_QUALITY_CHANGE_RATE = 0;
 
     @Override
-    public int getQualityChangeRate() {
-        return qualityChangeRate;
+    public int getQualityChangeRate(Item item) {
+        return LEGENDARY_QUALITY_CHANGE_RATE;
     }
 
     @Override
-    protected void updateQuality(Item item) {
-        // "Sulfuras", étant un objet légendaire, n'a pas de date de péremption et ne perd jamais en qualité (quality)
-    }
-
-    @Override
-    protected void updateSellin(Item item) {
-        // "Sulfuras", étant un objet légendaire, n'a pas de date de péremption et ne perd jamais en qualité (quality)
-
+    public void update(Item item) {
+        // "Sulfuras", étant un objet légendaire, ne perd jamais en qualité (quality) et n'a pas de date de péremption
     }
 }
