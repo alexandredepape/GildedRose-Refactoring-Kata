@@ -11,12 +11,12 @@ class GildedRose {
     private static final Map<String, ItemUpdater> itemUpdaters = new HashMap<>();
 
     static {
-        itemUpdaters.put("Sulfuras, Hand of Ragnaros",                new LegendaryUpdater());
-        itemUpdaters.put("Conjured Mana Cake",                        new ConjuredUpdater());
+        itemUpdaters.put("Sulfuras, Hand of Ragnaros", new LegendaryUpdater());
+        itemUpdaters.put("Conjured Mana Cake", new ConjuredUpdater());
         itemUpdaters.put("Backstage passes to a TAFKAL80ETC concert", new BackstagePassesUpdater());
-        itemUpdaters.put("Aged Brie",                                 new AgedBrieUpdater());
-        itemUpdaters.put("+5 Dexterity Vest",                         new NormalUpdater());
-        itemUpdaters.put("Elixir of the Mongoose",                    new NormalUpdater());
+        itemUpdaters.put("Aged Brie", new AgedBrieUpdater());
+        itemUpdaters.put("+5 Dexterity Vest", new NormalUpdater());
+        itemUpdaters.put("Elixir of the Mongoose", new NormalUpdater());
     }
 
     public GildedRose(Item[] items) {
