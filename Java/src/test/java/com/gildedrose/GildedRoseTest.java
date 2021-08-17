@@ -1,9 +1,9 @@
 package com.gildedrose;
 
-import com.gildedrose.updaters.*;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class GildedRoseTest {
 
@@ -19,7 +19,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void whenExceptionThrown_thenAssertionSucceeds() {
+    public void whenNewItemWithoutSpecifiedUpdater_ThenThrowsRunTimeException() {
         Item item = new Item("Agility Cloak", 20, 5);
         Item[] items = new Item[]{item};
 
